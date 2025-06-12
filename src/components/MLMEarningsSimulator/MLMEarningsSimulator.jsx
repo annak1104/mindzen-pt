@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const earningsData = {
-  2: 4.95,
-  5: 9.95,
-  10: 19.95,
-  20: 39.95,
+  2: '477',
+  5: '1 192',
+  10: '2 385',
+  20: '4 771',
 };
 
 const validRecruits = [2, 5, 10, 20];
@@ -41,7 +41,7 @@ const MLMEarningsSimulator = () => {
         Recrutas: {recruits}
       </p>
       <p className="font-montserrat text-3xl font-bold text-orange-500 mt-4">
-        ${earningsData[recruits] || "-"}
+        R${earningsData[recruits] || "-"}
       </p>
       <p className="italic text-gray-400 mt-3 text-xs">
         Aviso: Exemplos apenas; nenhum ganho garantido. Os resultados reais
